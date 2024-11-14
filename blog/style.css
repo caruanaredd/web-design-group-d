@@ -16,6 +16,16 @@ body {
     min-height: 200vh;
 }
 
+hr {
+    /* Removes the default bevel */
+    border: none;
+    border-top: 1px solid #ccc;
+
+    /* will not get replaced by other classes */
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
 /****************** INTRO ******************/
 .intro {
     background-image: url(images/leaves.jpg);
@@ -33,6 +43,11 @@ body {
     /* helps put the intro screen in front of the navbar */
     position: relative;
     z-index: 1010;
+}
+
+.intro-narrow {
+    height: 75vh;
+    z-index: 990;
 }
 
 .intro-container {
@@ -113,6 +128,10 @@ body {
     gap: 50px;
 }
 
+.one-column .card {
+    width: 100%;
+}
+
 .two-columns .card {
     width: calc((100% - 50px) / 2);
 }
@@ -124,6 +143,13 @@ body {
 /****************** WEBSITE CONTENT ******************/
 .main-content {
     margin-top: 100px;
+}
+
+.content-narrow {
+    width: 50%;
+    min-width: 640px;
+
+    margin: auto;
 }
 
 .vertical-title {
@@ -228,4 +254,30 @@ body {
     font-weight: bold;
 
     align-content: center;
+}
+
+/****************** STORIES ******************/
+.story-header h1 {
+    /* 200% of the current font size */
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+.story-header p {
+    font-size: 1.5em;
+    font-family: Cardo, Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+
+    line-height: 1.2;
+}
+
+.story-header .byline {
+    margin-top: 10px;
+}
+
+/* Targets EVERYTHING inside the byline class */
+.story-header .byline * {
+    font-style: normal;
+
+    display: inline;
 }
