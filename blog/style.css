@@ -344,3 +344,39 @@ hr {
     background-color: #f3f3f3;
     padding: 50px 50px 0;
 }
+
+/****************** FORM ******************/
+.website-form {
+    margin-bottom: 100px;
+}
+
+.form-element {
+    display: flex;
+    margin-top: 10px;
+}
+
+.form-element label {
+    width: 200px;
+}
+
+.form-element input,
+.form-element select,
+.form-element textarea {
+    font-family: Montserrat, Arial, sans-serif;
+    display: block;
+
+    padding: 5px;
+    flex: 1;
+
+    resize: none;
+}
+
+.form-element button {
+    font-family: Montserrat, Arial, sans-serif;
+    display: block;
+
+    padding: 5px;
+    margin-right: 10px;
+
+    width: 100px;
+}
